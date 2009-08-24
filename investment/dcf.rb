@@ -3,7 +3,7 @@
 require 'logger'
 
 @logger = Logger.new(STDOUT, 3, 1024000)
-@logger.level = Logger::DEBUG
+@logger.level = Logger::INFO
 
 def discounted_values(cash, discounted_rate, growth_rate, years=10)
   result = []
@@ -49,7 +49,7 @@ end
 #input = gets
 #args = input.split
 
-growth_rate = [0, 0.09, 0.09, 0.09, 0.09, 0.09, 0, 0.05, 0.05, 0.05]
+growth_rate = [0.09, 0.09, 0.09, 0.09, 0.09, 0.09, 0, 0.005, 0.05, 0.05]
 
-dcf(31.94, 0.07, growth_rate)
+dcf(18.67+8.1, 0.07, growth_rate)
 
