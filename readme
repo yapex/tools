@@ -1,2 +1,4 @@
 investment:
 	dcf: discounted cash flow
+	growth_ratio: calculate growth ratio from an array
+	percentage: calculate each number's percentage in an array
